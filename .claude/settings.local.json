@@ -10,7 +10,11 @@
       "Bash(npm install)",
       "Bash(npm run dev:*)",
       "Bash(git add:*)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nUpdate portfolio with personal info\n\n- Change AJ Soft to AJ Software Dev across all components\n- Update email to ponyajdeveloper@gmail.com\n- Update phone to 063-971-5888\n- Update Facebook link to https://www.facebook.com/develop.everyting\n- Remove GitHub, LinkedIn, Twitter links \\(keep only Facebook\\)\n- Remove \"View more on GitHub\" button from Projects section\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nUpdate portfolio with personal info\n\n- Change AJ Soft to AJ Software Dev across all components\n- Update email to ponyajdeveloper@gmail.com\n- Update phone to 063-971-5888\n- Update Facebook link to https://www.facebook.com/develop.everyting\n- Remove GitHub, LinkedIn, Twitter links \\(keep only Facebook\\)\n- Remove \"View more on GitHub\" button from Projects section\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git stash:*)",
+      "Bash(curl:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nUpdate skills and projects with real portfolio items\n\nSkills:\n- Add Delphi, Flutter, Android, Mantine, ESP32, FastAPI, Line OA\n- Remove Redux, Material UI, Ant Design\n\nProjects:\n- Add ระบบเช็คสต๊อกสินค้า \\(Delphi\\)\n- Add Web สะสมคะแนน Line OA\n- Add WebView4Delphi Integration\n- Add ESP32 MicroSD Card project\n- Add FastAPI MCP Server\n- Add Mobile App Development \\(Flutter/Android\\)\n- Add API อ่านบัตรประชาชน \\(Smart Card\\)\n- Update categories to include Desktop, Mobile, IoT\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }

@@ -99,7 +99,10 @@ export default function Skills() {
           <h3 className="text-2xl font-semibold text-center text-white mb-8">เทคโนโลยีอื่นๆ ที่ผมใช้</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              "Redux",
+              "Delphi",
+              "Flutter",
+              "Android",
+              "Mantine",
               "Zustand",
               "Prisma",
               "Mongoose",
@@ -111,9 +114,10 @@ export default function Skills() {
               "Webpack",
               "Vite",
               "SASS",
-              "Material UI",
-              "Ant Design",
               "Framer Motion",
+              "ESP32",
+              "FastAPI",
+              "Line OA",
             ].map((tech) => (
               <span
                 key={tech}
