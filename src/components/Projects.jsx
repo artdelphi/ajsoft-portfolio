@@ -107,13 +107,13 @@ export default function Projects() {
     {
       id: 10,
       title: "Project Tracking App",
-      description: "แอปติดตามโปรเจค ช่วยจัดการงาน ติดตามความคืบหน้า และทำงานร่วมกับทีม",
+      description: "Team member tracking system for project management. Monitor individual progress, task assignments, and team performance in real-time.",
       image: "📊",
       category: "fullstack",
       tags: ["Next.js", "Node.js", "MongoDB", "Socket.io"],
       liveUrl: "#",
       githubUrl: "#",
-      features: ["จัดการโปรเจค", "Kanban Board", "ติดตามความคืบหน้า", "แจ้งเตือนทีม"],
+      features: ["Team Member Tracking", "Task Assignment", "Progress Monitoring", "Performance Reports"],
     },
     {
       id: 11,
