@@ -2,7 +2,7 @@
 
 export default function About() {
   const stats = [
-    { number: "5+", label: "ปีประสบการณ์" },
+    { number: "20+", label: "ปีประสบการณ์" },
     { number: "50+", label: "โปรเจคสำเร็จ" },
     { number: "30+", label: "ลูกค้าที่พอใจ" },
     { number: "100%", label: "ความทุ่มเท" },
@@ -45,17 +45,17 @@ export default function About() {
             </h3>
             <p className="text-gray-400 leading-relaxed text-lg">
               สวัสดีครับ! ผมเป็นนักพัฒนาซอฟต์แวร์ที่มีความหลงใหลในการสร้างเว็บแอปพลิเคชันที่สวยงามและใช้งานง่าย
-              ผมมีประสบการณ์กว่า 5 ปีในการพัฒนาเว็บไซต์และแอปพลิเคชันด้วยเทคโนโลยีที่ทันสมัย
+              ผมมีประสบการณ์กว่า 20 ปีในการพัฒนาซอฟต์แวร์และแอปพลิเคชันด้วยเทคโนโลยีที่หลากหลาย
             </p>
             <p className="text-gray-400 leading-relaxed text-lg">
-              ผมเชี่ยวชาญในการใช้ React, Next.js, Node.js และเทคโนโลยีอื่นๆ อีกมากมาย
-              เพื่อสร้างผลิตภัณฑ์ดิจิทัลที่มีคุณภาพสูง ผมเชื่อว่าการเขียนโค้ดที่ดีนั้นต้องควบคู่ไปกับ
-              การออกแบบที่สวยงามและประสบการณ์ผู้ใช้ที่ยอดเยี่ยม
+              ผมเชี่ยวชาญในการใช้ Delphi, React, Next.js, Node.js, Flutter และเทคโนโลยีอื่นๆ อีกมากมาย
+              เพื่อสร้างผลิตภัณฑ์ดิจิทัลที่มีคุณภาพสูง นอกจากนี้ผมยังเป็นผู้เชี่ยวชาญในการใช้งานและทำงานร่วมกับ AI
+              ได้เป็นอย่างดี ผมเชื่อว่าการเขียนโค้ดที่ดีนั้นต้องควบคู่ไปกับการออกแบบที่สวยงามและประสบการณ์ผู้ใช้ที่ยอดเยี่ยม
             </p>
 
             {/* Skills tags */}
             <div className="flex flex-wrap gap-3 pt-4">
-              {["React", "Next.js", "Node.js", "TypeScript", "MongoDB", "PostgreSQL"].map((skill) => (
+              {["Delphi", "React", "Next.js", "Flutter", "Node.js", "AI/ML", "PostgreSQL", "MongoDB"].map((skill) => (
                 <span
                   key={skill}
                   className="px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full text-blue-400 text-sm font-medium"
