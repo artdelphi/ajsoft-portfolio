@@ -118,13 +118,13 @@ export default function Projects() {
     {
       id: 11,
       title: "RWBoost",
-      description: "เครื่องมือเพิ่มประสิทธิภาพการอ่านเขียนข้อมูล ช่วยเพิ่มความเร็วในการทำงานกับไฟล์",
-      image: "⚡",
-      category: "desktop",
-      tags: ["Delphi", "Windows", "Performance", "I/O Optimization"],
+      description: "AI-powered disease code analysis system for healthcare. Analyzes ICD codes to optimize DRG weights and improve hospital reimbursement accuracy.",
+      image: "🏥",
+      category: "ai",
+      tags: ["AI", "Healthcare", "Next.js", "Data Analysis"],
       liveUrl: "#",
       githubUrl: "#",
-      features: ["เพิ่มความเร็ว I/O", "Cache Management", "Monitoring", "Auto Optimization"],
+      features: ["AI Disease Code Analysis", "DRG Weight Optimization", "ICD Code Processing", "Healthcare Analytics"],
     },
     {
       id: 12,
