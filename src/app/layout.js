@@ -6,9 +6,9 @@ export const metadata = {
   description: "Professional portfolio showcasing web development projects and skills",
   icons: {
     icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/ajsoft-portfolio/favicon.svg", type: "image/svg+xml" },
     ],
-    apple: "/favicon.svg",
+    apple: "/ajsoft-portfolio/favicon.svg",
   },
 };
 
