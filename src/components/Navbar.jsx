@@ -1,9 +1,11 @@
 "use client";
 import { useState, useEffect } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language, toggleLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,11 +16,11 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
-    { name: "หน้าแรก", href: "#home" },
-    { name: "เกี่ยวกับ", href: "#about" },
-    { name: "ทักษะ", href: "#skills" },
-    { name: "ผลงาน", href: "#projects" },
-    { name: "ติดต่อ", href: "#contact" },
+    { name: t.nav.home, href: "#home" },
+    { name: t.nav.about, href: "#about" },
+    { name: t.nav.skills, href: "#skills" },
+    { name: t.nav.portfolio, href: "#projects" },
+    { name: t.nav.contact, href: "#contact" },
   ];
 
   return (
@@ -43,49 +45,72 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
-                key={item.name}
+                key={item.href}
                 href={item.href}
                 className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
               >
                 {item.name}
               </a>
             ))}
+
+            {/* Language Toggle */}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-2 px-3 py-1.5 bg-[#1e293b] rounded-full text-sm font-medium text-gray-300 hover:text-white hover:bg-[#2d3a4f] transition-all border border-[#334155]"
+            >
+              <span className={language === "th" ? "text-blue-400" : "text-gray-500"}>TH</span>
+              <span className="text-gray-500">/</span>
+              <span className={language === "en" ? "text-blue-400" : "text-gray-500"}>EN</span>
+            </button>
+
             <a
               href="#contact"
               className="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white font-medium hover:opacity-90 transition-opacity"
             >
-              ติดต่อเรา
+              {t.nav.contact}
             </a>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-white"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          <div className="md:hidden flex items-center gap-3">
+            {/* Language Toggle Mobile */}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-1 px-2 py-1 bg-[#1e293b] rounded-full text-xs font-medium text-gray-300 border border-[#334155]"
             >
-              {isMobileMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+              <span className={language === "th" ? "text-blue-400" : "text-gray-500"}>TH</span>
+              <span className="text-gray-500">/</span>
+              <span className={language === "en" ? "text-blue-400" : "text-gray-500"}>EN</span>
+            </button>
+
+            <button
+              className="text-white"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {isMobileMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -93,7 +118,7 @@ export default function Navbar() {
           <div className="md:hidden bg-[#1e293b] rounded-lg mt-2 p-4">
             {navItems.map((item) => (
               <a
-                key={item.name}
+                key={item.href}
                 href={item.href}
                 className="block py-2 text-gray-300 hover:text-white transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}

@@ -1,4 +1,5 @@
 import "./globals.css";
+import Providers from "../components/Providers";
 
 export const metadata = {
   title: "AJ Software Dev Portfolio | Full Stack Developer",
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="font-kanit antialiased">
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

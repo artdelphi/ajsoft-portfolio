@@ -1,11 +1,14 @@
 "use client";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function About() {
+  const { t } = useLanguage();
+
   const stats = [
-    { number: "20+", label: "Years Experience" },
-    { number: "50+", label: "Projects Delivered" },
-    { number: "30+", label: "Satisfied Clients" },
-    { number: "100%", label: "Commitment" },
+    { number: "20+", label: t.about.stats.experience },
+    { number: "50+", label: t.about.stats.projects },
+    { number: "30+", label: t.about.stats.clients },
+    { number: "100%", label: t.about.stats.commitment },
   ];
 
   return (
@@ -14,7 +17,7 @@ export default function About() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">About Me</span>
+            <span className="gradient-text">{t.about.title}</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full" />
         </div>
@@ -41,17 +44,13 @@ export default function About() {
           {/* Content Section */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-white">
-              Senior Full Stack Developer & Solutions Architect
+              {t.about.role}
             </h3>
             <p className="text-gray-400 leading-relaxed text-lg">
-              A passionate software engineer with over 20 years of experience in delivering
-              high-quality enterprise solutions. I specialize in building scalable web applications,
-              desktop software, and mobile apps that drive business success.
+              {t.about.description1}
             </p>
             <p className="text-gray-400 leading-relaxed text-lg">
-              My expertise spans Delphi, React, Next.js, Node.js, Flutter, and cutting-edge AI technologies.
-              I leverage modern tools and AI-powered workflows to accelerate development and deliver
-              exceptional results. I believe great software combines clean code, elegant design, and outstanding user experience.
+              {t.about.description2}
             </p>
 
             {/* Skills tags */}
@@ -75,7 +74,7 @@ export default function About() {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
-                Download Resume
+                {t.about.downloadResume}
               </a>
             </div>
           </div>

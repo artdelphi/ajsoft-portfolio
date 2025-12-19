@@ -1,30 +1,32 @@
 "use client";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
 
   const footerLinks = [
     {
-      title: "Navigation",
+      title: t.footer.navigation,
       links: [
-        { name: "Home", href: "#home" },
-        { name: "About", href: "#about" },
-        { name: "Skills", href: "#skills" },
-        { name: "Portfolio", href: "#projects" },
-        { name: "Contact", href: "#contact" },
+        { name: t.nav.home, href: "#home" },
+        { name: t.nav.about, href: "#about" },
+        { name: t.nav.skills, href: "#skills" },
+        { name: t.nav.portfolio, href: "#projects" },
+        { name: t.nav.contact, href: "#contact" },
       ],
     },
     {
-      title: "Services",
+      title: t.footer.services,
       links: [
-        { name: "Web Development", href: "#" },
-        { name: "Mobile App Development", href: "#" },
-        { name: "Desktop Applications", href: "#" },
-        { name: "AI Integration & Consulting", href: "#" },
+        { name: t.footer.servicesList.web, href: "#" },
+        { name: t.footer.servicesList.mobile, href: "#" },
+        { name: t.footer.servicesList.desktop, href: "#" },
+        { name: t.footer.servicesList.ai, href: "#" },
       ],
     },
     {
-      title: "Connect",
+      title: t.footer.connect,
       links: [
         { name: "Facebook", href: "https://www.facebook.com/develop.everyting" },
       ],
@@ -44,7 +46,7 @@ export default function Footer() {
               <span className="text-xl font-bold gradient-text">AJ Software Dev</span>
             </a>
             <p className="text-gray-400 mb-6 max-w-sm">
-              Senior Software Developer specializing in enterprise solutions, web applications, mobile apps, and AI integration.
+              {t.footer.description}
             </p>
             <div className="flex gap-4">
               <a
@@ -83,10 +85,10 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="border-t border-[#1e293b] mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            &copy; {currentYear} AJ Software Dev. All rights reserved.
+            &copy; {currentYear} AJ Software Dev. {t.footer.copyright}.
           </p>
           <p className="text-gray-500 text-sm">
-            Designed & Developed by AJ Software Dev
+            {t.footer.designedBy} AJ Software Dev
           </p>
         </div>
       </div>

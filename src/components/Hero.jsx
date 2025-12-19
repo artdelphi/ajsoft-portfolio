@@ -1,10 +1,17 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Hero() {
+  const { t } = useLanguage();
   const [text, setText] = useState("");
-  const fullText = "Full Stack Developer";
+  const fullText = t.hero.subtitle;
   const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    setText("");
+    setIndex(0);
+  }, [fullText]);
 
   useEffect(() => {
     if (index < fullText.length) {
@@ -14,7 +21,7 @@ export default function Hero() {
       }, 100);
       return () => clearTimeout(timeout);
     }
-  }, [index]);
+  }, [index, fullText]);
 
   return (
     <section
@@ -30,10 +37,10 @@ export default function Hero() {
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <div className="animate-fade-in-up">
           <p className="text-blue-400 text-lg mb-4 font-medium">
-            Welcome, I'm
+            {t.hero.welcome}
           </p>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="gradient-text">AJ Software Dev</span>
+            <span className="gradient-text">{t.hero.title}</span>
           </h1>
           <div className="h-12 mb-8">
             <h2 className="text-2xl md:text-4xl text-gray-300 font-light">
@@ -42,8 +49,7 @@ export default function Hero() {
             </h2>
           </div>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Senior Software Developer with 20+ years of experience delivering enterprise solutions.
-            Specializing in Full Stack Development, Desktop Applications, Mobile Apps, and AI Integration.
+            {t.hero.description}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -51,13 +57,13 @@ export default function Hero() {
               href="#projects"
               className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white font-semibold text-lg hover:opacity-90 transition-all hover:scale-105 animate-pulse-glow"
             >
-              View Portfolio
+              {t.hero.viewPortfolio}
             </a>
             <a
               href="#contact"
               className="px-8 py-4 border-2 border-blue-500 rounded-full text-blue-400 font-semibold text-lg hover:bg-blue-500/10 transition-all hover:scale-105"
             >
-              Get In Touch
+              {t.hero.getInTouch}
             </a>
           </div>
         </div>

@@ -1,9 +1,12 @@
 "use client";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Skills() {
+  const { t } = useLanguage();
+
   const skillCategories = [
     {
-      title: "Frontend Development",
+      key: "frontend",
       icon: "🎨",
       skills: [
         { name: "React.js", level: 95 },
@@ -14,7 +17,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Backend Development",
+      key: "backend",
       icon: "⚙️",
       skills: [
         { name: "Node.js", level: 90 },
@@ -25,7 +28,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Database & Cloud",
+      key: "database",
       icon: "☁️",
       skills: [
         { name: "MongoDB", level: 85 },
@@ -36,7 +39,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Tools & Others",
+      key: "tools",
       icon: "🛠️",
       skills: [
         { name: "Git & GitHub", level: 95 },
@@ -54,10 +57,10 @@ export default function Skills() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">ทักษะของผม</span>
+            <span className="gradient-text">{t.skills.title}</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            เทคโนโลยีและเครื่องมือที่ผมใช้ในการพัฒนาซอฟต์แวร์
+            {t.skills.subtitle}
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full mt-4" />
         </div>
@@ -66,12 +69,12 @@ export default function Skills() {
         <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category) => (
             <div
-              key={category.title}
+              key={category.key}
               className="bg-[#1e293b] rounded-2xl p-8 border border-[#334155] card-hover"
             >
               <div className="flex items-center gap-4 mb-6">
                 <span className="text-4xl">{category.icon}</span>
-                <h3 className="text-xl font-semibold text-white">{category.title}</h3>
+                <h3 className="text-xl font-semibold text-white">{t.skills.categories[category.key]}</h3>
               </div>
 
               <div className="space-y-5">
@@ -96,7 +99,7 @@ export default function Skills() {
 
         {/* Additional Skills */}
         <div className="mt-12">
-          <h3 className="text-2xl font-semibold text-center text-white mb-8">เทคโนโลยีอื่นๆ ที่ผมใช้</h3>
+          <h3 className="text-2xl font-semibold text-center text-white mb-8">{t.skills.otherTech}</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
               "Delphi",
