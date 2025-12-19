@@ -36,7 +36,7 @@ export default function Navbar() {
             <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
               <span className="text-white font-bold text-xl">A</span>
             </div>
-            <span className="text-xl font-bold gradient-text">AJ Soft</span>
+            <span className="text-xl font-bold gradient-text">AJ Software Dev</span>
           </a>
 
           {/* Desktop Menu */}

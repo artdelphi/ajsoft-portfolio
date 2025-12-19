@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone:*)",
+      "Bash(git checkout:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git fetch:*)",
+      "Bash(git pull:*)",
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nUpdate portfolio with personal info\n\n- Change AJ Soft to AJ Software Dev across all components\n- Update email to ponyajdeveloper@gmail.com\n- Update phone to 063-971-5888\n- Update Facebook link to https://www.facebook.com/develop.everyting\n- Remove GitHub, LinkedIn, Twitter links \\(keep only Facebook\\)\n- Remove \"View more on GitHub\" button from Projects section\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}

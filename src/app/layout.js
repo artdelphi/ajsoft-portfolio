@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "AJ Soft Portfolio | Full Stack Developer",
+  title: "AJ Software Dev Portfolio | Full Stack Developer",
   description: "Professional portfolio showcasing web development projects and skills",
 };
 
