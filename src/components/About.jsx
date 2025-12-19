@@ -2,10 +2,10 @@
 
 export default function About() {
   const stats = [
-    { number: "20+", label: "ปีประสบการณ์" },
-    { number: "50+", label: "โปรเจคสำเร็จ" },
-    { number: "30+", label: "ลูกค้าที่พอใจ" },
-    { number: "100%", label: "ความทุ่มเท" },
+    { number: "20+", label: "Years Experience" },
+    { number: "50+", label: "Projects Delivered" },
+    { number: "30+", label: "Satisfied Clients" },
+    { number: "100%", label: "Commitment" },
   ];
 
   return (
@@ -14,7 +14,7 @@ export default function About() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">เกี่ยวกับผม</span>
+            <span className="gradient-text">About Me</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full" />
         </div>
@@ -41,16 +41,17 @@ export default function About() {
           {/* Content Section */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-white">
-              Full Stack Developer & UI/UX Designer
+              Senior Full Stack Developer & Solutions Architect
             </h3>
             <p className="text-gray-400 leading-relaxed text-lg">
-              สวัสดีครับ! ผมเป็นนักพัฒนาซอฟต์แวร์ที่มีความหลงใหลในการสร้างเว็บแอปพลิเคชันที่สวยงามและใช้งานง่าย
-              ผมมีประสบการณ์กว่า 20 ปีในการพัฒนาซอฟต์แวร์และแอปพลิเคชันด้วยเทคโนโลยีที่หลากหลาย
+              A passionate software engineer with over 20 years of experience in delivering
+              high-quality enterprise solutions. I specialize in building scalable web applications,
+              desktop software, and mobile apps that drive business success.
             </p>
             <p className="text-gray-400 leading-relaxed text-lg">
-              ผมเชี่ยวชาญในการใช้ Delphi, React, Next.js, Node.js, Flutter และเทคโนโลยีอื่นๆ อีกมากมาย
-              เพื่อสร้างผลิตภัณฑ์ดิจิทัลที่มีคุณภาพสูง นอกจากนี้ผมยังเป็นผู้เชี่ยวชาญในการใช้งานและทำงานร่วมกับ AI
-              ได้เป็นอย่างดี ผมเชื่อว่าการเขียนโค้ดที่ดีนั้นต้องควบคู่ไปกับการออกแบบที่สวยงามและประสบการณ์ผู้ใช้ที่ยอดเยี่ยม
+              My expertise spans Delphi, React, Next.js, Node.js, Flutter, and cutting-edge AI technologies.
+              I leverage modern tools and AI-powered workflows to accelerate development and deliver
+              exceptional results. I believe great software combines clean code, elegant design, and outstanding user experience.
             </p>
 
             {/* Skills tags */}
@@ -74,7 +75,7 @@ export default function About() {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
-                ดาวน์โหลด Resume
+                Download Resume
               </a>
             </div>
           </div>

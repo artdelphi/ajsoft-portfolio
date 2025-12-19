@@ -195,7 +195,7 @@ export default function Projects() {
   ];
 
   const categories = [
-    { id: "all", name: "ทั้งหมด" },
+    { id: "all", name: "All Projects" },
     { id: "fullstack", name: "Full Stack" },
     { id: "desktop", name: "Desktop" },
     { id: "mobile", name: "Mobile" },
@@ -213,10 +213,10 @@ export default function Projects() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">ผลงานของผม</span>
+            <span className="gradient-text">Portfolio</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            โปรเจคที่ผมได้พัฒนาและภาคภูมิใจ
+            A showcase of projects I've delivered with excellence and dedication
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full mt-4" />
         </div>

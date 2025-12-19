@@ -30,7 +30,7 @@ export default function Hero() {
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <div className="animate-fade-in-up">
           <p className="text-blue-400 text-lg mb-4 font-medium">
-            สวัสดีครับ ผมชื่อ
+            Welcome, I'm
           </p>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="gradient-text">AJ Software Dev</span>
@@ -42,8 +42,8 @@ export default function Hero() {
             </h2>
           </div>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            นักพัฒนาซอฟต์แวร์ที่มีความหลงใหลในการสร้างเว็บแอปพลิเคชันที่สวยงาม
-            และมีประสิทธิภาพ ด้วยประสบการณ์กว่า 5 ปีในการพัฒนา Web Application
+            Senior Software Developer with 20+ years of experience delivering enterprise solutions.
+            Specializing in Full Stack Development, Desktop Applications, Mobile Apps, and AI Integration.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -51,13 +51,13 @@ export default function Hero() {
               href="#projects"
               className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white font-semibold text-lg hover:opacity-90 transition-all hover:scale-105 animate-pulse-glow"
             >
-              ดูผลงาน
+              View Portfolio
             </a>
             <a
               href="#contact"
               className="px-8 py-4 border-2 border-blue-500 rounded-full text-blue-400 font-semibold text-lg hover:bg-blue-500/10 transition-all hover:scale-105"
             >
-              ติดต่อผม
+              Get In Touch
             </a>
           </div>
         </div>

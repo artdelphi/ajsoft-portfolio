@@ -5,26 +5,26 @@ export default function Footer() {
 
   const footerLinks = [
     {
-      title: "เมนู",
+      title: "Navigation",
       links: [
-        { name: "หน้าแรก", href: "#home" },
-        { name: "เกี่ยวกับ", href: "#about" },
-        { name: "ทักษะ", href: "#skills" },
-        { name: "ผลงาน", href: "#projects" },
-        { name: "ติดต่อ", href: "#contact" },
+        { name: "Home", href: "#home" },
+        { name: "About", href: "#about" },
+        { name: "Skills", href: "#skills" },
+        { name: "Portfolio", href: "#projects" },
+        { name: "Contact", href: "#contact" },
       ],
     },
     {
-      title: "บริการ",
+      title: "Services",
       links: [
-        { name: "พัฒนาเว็บไซต์", href: "#" },
-        { name: "พัฒนาแอปพลิเคชัน", href: "#" },
-        { name: "ออกแบบ UI/UX", href: "#" },
-        { name: "ที่ปรึกษาด้าน IT", href: "#" },
+        { name: "Web Development", href: "#" },
+        { name: "Mobile App Development", href: "#" },
+        { name: "Desktop Applications", href: "#" },
+        { name: "AI Integration & Consulting", href: "#" },
       ],
     },
     {
-      title: "ติดตาม",
+      title: "Connect",
       links: [
         { name: "Facebook", href: "https://www.facebook.com/develop.everyting" },
       ],
@@ -44,7 +44,7 @@ export default function Footer() {
               <span className="text-xl font-bold gradient-text">AJ Software Dev</span>
             </a>
             <p className="text-gray-400 mb-6 max-w-sm">
-              นักพัฒนาซอฟต์แวร์ที่มีความหลงใหลในการสร้างเว็บแอปพลิเคชันที่สวยงามและมีประสิทธิภาพ
+              Senior Software Developer specializing in enterprise solutions, web applications, mobile apps, and AI integration.
             </p>
             <div className="flex gap-4">
               <a
@@ -83,10 +83,10 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="border-t border-[#1e293b] mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            &copy; {currentYear} AJ Software Dev. สงวนลิขสิทธิ์ทุกประการ
+            &copy; {currentYear} AJ Software Dev. All rights reserved.
           </p>
           <p className="text-gray-500 text-sm">
-            ออกแบบและพัฒนาด้วย ❤️ โดย AJ Software Dev
+            Designed & Developed by AJ Software Dev
           </p>
         </div>
       </div>
